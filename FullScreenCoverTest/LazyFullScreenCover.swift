@@ -21,7 +21,7 @@ struct LazyFullScreenCover<Content: View>: View {
     }
 }
 
-extension View {
+extension AnyView {
     func lazyFullScreenCover<Content>(isPresented: Binding<Bool>, transition: AnyTransition = .opacity, content: @escaping () -> Content) -> some View where Content : View {
         ZStack {
             self
