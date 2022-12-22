@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct LazyFullScreenCover<Content: View>: View {
+struct EasyFullScreenCover<Content: View>: View {
     @Binding var isPresented: Bool
     @ViewBuilder var content: Content
     
     var body: some View {
         ZStack {
             content
-                .environment(\.lazyDismiss, LazyDismiss {
+                .environment(\.easyDismiss, EasyDismiss {
                     isPresented = false
                 })
         }
@@ -22,19 +22,21 @@ struct LazyFullScreenCover<Content: View>: View {
 }
 
 extension View {
-    func lazyFullScreenCover<Content>(isPresented: Binding<Bool>, transition: AnyTransition = .opacity, content: @escaping () -> Content) -> some View where Content : View {
+    func easyFullScreenCover<Content>(isPresented: Binding<Bool>, transition: AnyTransition = .opacity, content: @escaping () -> Content) -> some View where Content : View {
         ZStack {
             self
             
-            if isPresented.wrappedValue {
-                LazyFullScreenCover(isPresented: isPresented, content: content)
-                    .transition(transition)
+            ZStack { // for correct work of transition animation
+                if isPresented.wrappedValue {
+                    EasyFullScreenCover(isPresented: isPresented, content: content)
+                        .transition(transition)
+                }
             }
         }
     }
 }
 
-struct LazyDismiss {
+struct EasyDismiss {
     private var action: () -> Void
     func callAsFunction() {
         action()
@@ -45,13 +47,13 @@ struct LazyDismiss {
     }
 }
 
-struct LazyDismissKey: EnvironmentKey {
-    static var defaultValue: LazyDismiss = LazyDismiss()
+struct EasyDismissKey: EnvironmentKey {
+    static var defaultValue: EasyDismiss = EasyDismiss()
 }
 
 extension EnvironmentValues {
-    var lazyDismiss: LazyDismiss {
-        get { self[LazyDismissKey.self] }
-        set { self[LazyDismissKey.self] = newValue }
+    var easyDismiss: EasyDismiss {
+        get { self[EasyDismissKey.self] }
+        set { self[EasyDismissKey.self] = newValue }
     }
 }

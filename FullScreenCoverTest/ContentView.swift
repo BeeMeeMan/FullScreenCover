@@ -21,7 +21,7 @@ struct ContentView: View {
             } label: {
                 Text("Show view")
             }
-            .lazyFullScreenCover(isPresented: $showView) {
+            .easyFullScreenCover(isPresented: $showView) {
                 NewView()
             }
         }

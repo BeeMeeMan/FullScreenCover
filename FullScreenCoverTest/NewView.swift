@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NewView: View {
-    @Environment(\.lazyDismiss) var lazyDismiss: LazyDismiss
+    @Environment(\.easyDismiss) var easyDismiss: EasyDismiss
     
     var body: some View {
         ZStack {
@@ -19,7 +19,7 @@ struct NewView: View {
                 
                 Button {
                     withAnimation {
-                        lazyDismiss()
+                        easyDismiss()
                     }
                 } label: {
                     Text("Close view")
