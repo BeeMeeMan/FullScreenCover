@@ -12,7 +12,7 @@
 		403A2E7A287A0C0900CF680F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 403A2E79287A0C0900CF680F /* Assets.xcassets */; };
 		403A2E7D287A0C0900CF680F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 403A2E7C287A0C0900CF680F /* Preview Assets.xcassets */; };
 		403A2E86287A0C8400CF680F /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403A2E85287A0C8400CF680F /* NewView.swift */; };
-		4079B80B287C2D4F006476BF /* LazyFullScreenCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4079B80A287C2D4F006476BF /* LazyFullScreenCover.swift */; };
+		4079B80B287C2D4F006476BF /* EasyFullScreenCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4079B80A287C2D4F006476BF /* EasyFullScreenCover.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		403A2E79287A0C0900CF680F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		403A2E7C287A0C0900CF680F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		403A2E85287A0C8400CF680F /* NewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
-		4079B80A287C2D4F006476BF /* LazyFullScreenCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyFullScreenCover.swift; sourceTree = "<group>"; };
+		4079B80A287C2D4F006476BF /* EasyFullScreenCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyFullScreenCover.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 				403A2E75287A0C0900CF680F /* FullScreenCoverTestApp.swift */,
 				403A2E77287A0C0900CF680F /* ContentView.swift */,
 				403A2E85287A0C8400CF680F /* NewView.swift */,
-				4079B80A287C2D4F006476BF /* LazyFullScreenCover.swift */,
+				4079B80A287C2D4F006476BF /* EasyFullScreenCover.swift */,
 				403A2E79287A0C0900CF680F /* Assets.xcassets */,
 				403A2E7B287A0C0900CF680F /* Preview Content */,
 			);
@@ -143,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4079B80B287C2D4F006476BF /* LazyFullScreenCover.swift in Sources */,
+				4079B80B287C2D4F006476BF /* EasyFullScreenCover.swift in Sources */,
 				403A2E86287A0C8400CF680F /* NewView.swift in Sources */,
 				403A2E78287A0C0900CF680F /* ContentView.swift in Sources */,
 				403A2E76287A0C0900CF680F /* FullScreenCoverTestApp.swift in Sources */,

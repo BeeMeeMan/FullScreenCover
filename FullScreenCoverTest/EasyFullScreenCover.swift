@@ -1,5 +1,5 @@
 //
-//  LazyFullScreenCover.swift
+//  EasyFullScreenCover.swift
 //  FullScreenCoverTest
 //
 //  Created by Korsun Yevhenii on 11.07.2022.
